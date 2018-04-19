@@ -7,8 +7,9 @@ name = "pypi"
 
 [packages]
 
-"psycopg2" = "*"
 halo = "*"
+"psycopg2-binary" = "*"
+"psycopg2" = "*"
 
 
 [dev-packages]

@@ -1,0 +1,17 @@
+version: "3"
+volumes:
+  postgres-data:
+services:
+  postgres-labs:
+    image: postgres:9.6-alpine
+    container_name: "postgres"
+    restart: "on-failure"
+    environment:
+      - POSTGRES_DB=pg_pubsub
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+      - TZ=GMT
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
