@@ -13,7 +13,7 @@ Setup postgres [docker](https://docs.docker.com/install/)
 
 Setup `notify.py`
 ```bash
-  cd notify_python
+  cd notify-python
   pip install pipenv
   pipenv install
   pipenv shell
